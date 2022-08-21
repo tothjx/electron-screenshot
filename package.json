@@ -1,0 +1,47 @@
+{
+  "name": "edscreenshot",
+  "version": "1.0.0",
+  "productName": "Electron Desktop Screenshot",
+  "description": "Electron Desktop Screenshot",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "author": "tothj",
+  "license": "MIT",
+  "build": {
+		"appId": "edscreenshot",
+		"win": {
+			"target": [
+				"nsis"
+			],
+			"icon": "./img/icon.ico"
+		},
+		"nsis": {
+			"installerIcon": "./img/icon.ico",
+			"uninstallerIcon": "./img/icon.ico",
+			"uninstallDisplayName": "Electron Desktop Screenshot",
+			"license": "license.txt",
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		}
+	},
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.65",
+    "@electron-forge/maker-deb": "^6.0.0-beta.65",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.65",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.65",
+    "@electron-forge/maker-zip": "^6.0.0-beta.65",
+    "electron": "^20.0.2",
+    "electron-builder": "^23.3.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "screenshot-desktop": "^1.12.7"
+  }
+}

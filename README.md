@@ -1,2 +1,2 @@
 # electron-screenshot
-electron desktop screenshot
+electron - lightweight desktop screenshot maker for windows

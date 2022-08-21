@@ -1,0 +1,14 @@
+# packages:
+npm i --save-dev electron
+npm i --save-dev electron-builder
+npm i --save-dev @electron-forge/cli
+npm i --save-dev @electron-forge/maker-deb
+npm i --save-dev @electron-forge/maker-rpm
+npm i --save-dev @electron-forge/maker-squirrel
+npm i --save-dev @electron-forge/maker-zip
+npm i --save electron-squirrel-startup
+npm i --save screenshot-desktop
+
+# build:
+npm run build-installer
+npx electron-builder build --win portable
